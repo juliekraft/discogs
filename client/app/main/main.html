@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Collection:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="release in collection">
+        <li></li>
+        <li>
+          <img src="{{release.basic_information.thumb}}">
+          <a ng-click="getRelease(release.basic_information.resource_url)" tooltip="{{thing.info}}">{{release.basic_information.title}}</a>
+        </li>
+        <li>{{releasedata}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
